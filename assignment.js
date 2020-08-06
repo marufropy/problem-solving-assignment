@@ -8,11 +8,6 @@ function feetToMile(feet){
     }
 }
 
-var foot = 5279.99;
-var mile = feetToMile(foot);
-console.log(mile);
-
-
 function woodCalculator(chair, table, bed){
     if(chair < 0 || table < 0 || bed < 0 || !(Number.isInteger(chair)) || !(Number.isInteger(table)) || !(Number.isInteger(bed))){
         return "error! amount can not be negative or fraction."
@@ -22,13 +17,6 @@ function woodCalculator(chair, table, bed){
         return result;    
     }
 }
-
-var chair = 1;
-var table = 1;
-var bed = 1;
-var wood = woodCalculator(chair, table, bed);
-console.log(wood);
-
 
 function brickCalculator(height){
     if(height < 0 || !(Number.isInteger(height))){
@@ -52,11 +40,6 @@ function brickCalculator(height){
     }
 }
 
-var height = 27;
-var brickCount = brickCalculator(height);
-console.log(brickCount);
-
-
 function tinyFriend(friends){
     if(friends.length == 0){
         return "error! empty array given."
@@ -71,6 +54,21 @@ function tinyFriend(friends){
         return result;    
     }
 }
+
+
+var foot = 5279.99;
+var mile = feetToMile(foot);
+console.log(mile);
+
+var chair = 1;
+var table = 1;
+var bed = 1;
+var wood = woodCalculator(chair, table, bed);
+console.log(wood);
+
+var height = 27;
+var brickCount = brickCalculator(height);
+console.log(brickCount);
 
 var friends = ["brad", "leonardo", "tom", "ross", "chandler", "joey", "jennifer", "megan", "emilia", "rachel", "monica", "phoebe"];
 var friend = tinyFriend(friends);
